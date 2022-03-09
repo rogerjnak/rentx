@@ -17,6 +17,8 @@ class User {
   isAdmin: boolean;
   @CreateDateColumn()
   created_at: Date;
+  @Column()
+  avatar: string;
 
   constructor() {
     this.id = uuidV4();
