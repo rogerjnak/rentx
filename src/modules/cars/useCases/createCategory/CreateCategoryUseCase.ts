@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { inject, injectable } from "tsyringe";
-import { CategoriesRepository } from "../../repositories/implementations/CategoriesRepository";
+import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
 
 interface IRequest {
   name: string;
@@ -12,7 +12,7 @@ class CreateCategoryUseCase {
   
   constructor(
     @inject("CategoriesRepository")
-    private categoryRepository: CategoriesRepository
+    private categoryRepository: ICategoriesRepository
     ) { }
 
   async execute({ name, description }: IRequest): Promise<void> {

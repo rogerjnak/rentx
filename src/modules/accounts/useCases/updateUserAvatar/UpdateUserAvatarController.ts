@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
-import { deleteFile } from "../../../../utils/file";
+import { deleteFile } from "@utils/file";
 import { UpdateUserAvatarUseCase } from "./UpdateUserAvatarUseCase";
 
 class UpdateUserAvatarController {
