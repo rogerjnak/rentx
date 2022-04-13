@@ -20,7 +20,7 @@
       ],
       "@utils/*": [
         "utils/*"
-      ],
+      ]
     },
     "resolveJsonModule": true,
     "outDir": "./dist",
